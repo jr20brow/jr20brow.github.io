@@ -1,41 +1,98 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaden's Tuff Ahh Website</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-  </head>
 
-  <body>
-    <h1>Tuff Ahh Homepage</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaden's Tuff Ahh Website</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 
-    <img src="grapedawg.png" alt="Most peak dog of all time">
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation-name: myAnimation;
+      animation-duration: 4s;
+    }
 
-    <p>
-      Goon or die as the say.
-    </p>
+    @keyframes myAnimation {
+      0% {
+        background-color: red;
+      }
 
-    <p>
-      This is the peak of all peak, check it out.
-      <a href="https://neal.fun/">Neal.fun</a>!
-    </p>
+      25% {
+        background-color: yellow;
+      }
 
-    <h2>Best drinks</h2>
+      50% {
+        background-color: blue;
+      }
 
-    <ol>
-      <li>Root Beer</li>
-      <li>Cream Soda</li>
-      <li>More Root Beer</li>
-    </ol>
+      100% {
+        background-color: green;
+      }
+    }
 
-    <h2>Peak of poetry</h2>
-    <p>
-      You, me
-Gas station
-What are we getting for dinner?
-Sushi, of course
-    </p>
+    /**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+    @-webkit-keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
 
-  </body>
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tuff Ahh Homepage</h1>
+
+  <div></div>
+
+  <img src="grapedawg.png" alt="Most peak dog of all time">
+
+  <p>
+    Goon or die as the say.
+  </p>
+
+  <p>
+    This is the peak of all peak, check it out.
+    <a href="https://neal.fun/">Neal.fun</a>!
+  </p>
+
+  <h2>Best drinks</h2>
+
+  <ol>
+    <li>Root Beer</li>
+    <li>Cream Soda</li>
+    <li>More Root Beer</li>
+  </ol>
+
+  <h2>Peak of poetry</h2>
+  <p>
+    You, me
+    Gas station
+    What are we getting for dinner?
+    Sushi, of course
+  </p>
+
+</body>
+
 </html>
