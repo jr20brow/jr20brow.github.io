@@ -10,3 +10,13 @@ buttonA.addEventListener('click', function() {
     headingA.textContent = `Welcome ${name}`;
 
 });
+
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+const sentence = document.querySelector("#sentence");
+
+textBox.addEventListener("keydown", (event) => {
+    output.textContent = `You pressed "${event.key}".`;
+    //Come back to ts
+    output.sentence = `Sentence: "${output.textContent}"`;
+});
