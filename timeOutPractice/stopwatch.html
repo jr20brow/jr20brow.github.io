@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Jaden's Tuff Ahh Stopwatch</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Stopwatch</h1>
+
+        <h2 id="counter">0</h2>
+
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+
+    </main>
+
+    <script>
+        let timerId;
+        let count = 0;
+
+        document.getElementById("start").addEventListener("click", () => {
+            if (!timerId) {
+                timerId = setInterval(() => {
+                    count++;
+                    document.getElementById("counter").textContent = count;
+                }, 1000);
+            }
+        });
+
+        document.getElementById("stop").addEventListener("click", () => {
+            clearInterval(timerId);
+        });
+
+        document.getElementById("reset").addEventListener("click", () => {
+            count = 0;
+            document.getElementById("counter").textContent = count;
+            //console.log(count);
+        });
+
+    </script>
+
+</body>
+
+</html>

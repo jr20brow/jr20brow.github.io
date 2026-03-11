@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+<form id="incomeForm">
+    <h1>Add Income</h1>
+  <label for="incomeForm">Income Source Name:</label>
+  <input
+    type="email"
+    id="emailAddress"
+    placeholder="Enter your Siena email"
+    required
+    pattern=".+@siena\.edu"
+    title="Please enter a valid Siena College email ending with @siena.edu"
+  >
+  <br>
+
+  <label for="incomeForm">Amount:</label>
+  <input
+    type="text"
+    id="sienaID"
+    placeholder="Enter your Siena ID"
+    required
+    pattern="98\d{6}"
+    title="Siena ID must be 8 digits starting with 98"
+  >
+    <br>
+
+    <label for="incomeForm">Frequency:</label>
+    <select 
+    name="frequency" 
+    id="frequency">
+    <option value="one-time">One-Time</option>
+    <option value="montly">Monthly</option>
+    <option value="bi-weekly">Bi-Weekly</option>
+    <option value="yearly">Yearly</option>
+  </select>
+
+  <br>
+
+  <button type="submit">Submit</button>
+
+  </body>
+</form>
+
+<script>
+    
+</script>
+
+</html>
