@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <title>Practice</title>
+</head>
+
+<body>
+    <main class="container">
+        <button id="start">Start Timer</button>
+        <button id="stop">Stop Timer</button>
+        <p id="counter">0</p>
+    </main>
+
+    <script>
+        let timerId;
+        let count = 0;
+
+        document.getElementById("start").addEventListener("click", () => {
+            if (!timerId) {
+                timerId = setInterval(() => {
+                    count++;
+                    document.getElementById("counter").textContent = count;
+                }, 1000);
+            }
+        });
+
+        document.getElementById("stop").addEventListener("click", () => {
+            if(!timerId) {
+            timerId = clearInterval(() => {
+                count = 0;
+                document.getElementById("counter").textContent = count;
+            }, 1000);
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
